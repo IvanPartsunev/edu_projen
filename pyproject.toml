@@ -8,10 +8,11 @@ authors = [ "IvanPartsunev <ivan.parcunev@gmail.com>" ]
 readme = "README.md"
 
   [tool.poetry.dependencies]
+  apache-airflow = "^2.10.4"
   aws-cdk-lib = "^2.1.0"
   Boto3 = "^1.35.92"
   constructs = "^10.0.5"
-  python = "^3.12"
+  python = "~3.12"
 
 [tool.poetry.group.dev.dependencies]
 projen = "0.91.5"

@@ -1,3 +1,5 @@
+import os
+
 from projen.awscdk import AwsCdkPythonApp
 
 project = AwsCdkPythonApp(
@@ -10,11 +12,14 @@ project = AwsCdkPythonApp(
     poetry=True,
 )
 
-project.add_dependency("python@^3.12")
+# Dependencies:
+project.add_dependency("python@~3.12")
 project.add_dependency("Boto3@^1.35.92")
+project.add_dependency("apache-edu_airflow@^2.10.4")
 
+# .gitignore:
 project.gitignore.add_patterns(
-    "airflow/docker-compose.yaml",   #Ignore docker-compose for airflow
+    "edu_airflow/docker-compose.yaml",   #Ignore docker-compose for edu_airflow
 )
 
 project.synth()

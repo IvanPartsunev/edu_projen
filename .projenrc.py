@@ -7,6 +7,7 @@ project = AwsCdkPythonApp(
     module_name="edu_projen_project",
     name="my_project",
     version="0.1.0",
+    poetry=True,
 )
 
 project.synth()

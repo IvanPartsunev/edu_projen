@@ -85,4 +85,5 @@ cython_debug/
 !/cdk.json
 /cdk.out/
 .cdk.staging/
+airflow/docker-compose.yaml
 !/.projenrc.py

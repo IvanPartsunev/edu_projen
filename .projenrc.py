@@ -13,4 +13,8 @@ project = AwsCdkPythonApp(
 project.add_dependency("python@^3.12")
 project.add_dependency("Boto3@^1.35.92")
 
+project.gitignore.add_patterns(
+    "airflow/docker-compose.yaml",   #Ignore docker-compose for airflow
+)
+
 project.synth()

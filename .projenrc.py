@@ -10,4 +10,5 @@ project = AwsCdkPythonApp(
     poetry=True,
 )
 
+project.add_dependency("python@^3.12")
 project.synth()

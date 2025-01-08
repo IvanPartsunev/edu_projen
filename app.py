@@ -9,7 +9,7 @@ dev_env = Environment(
 )
 
 app = App()
-MyStack(app, "my_project-dev", env=dev_env)
+MyStack(app, "my-project-dev", env=dev_env)
 # MyStack(app, "my_project-prod", env=prod_env)
 
 app.synth()

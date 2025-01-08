@@ -11,4 +11,6 @@ project = AwsCdkPythonApp(
 )
 
 project.add_dependency("python@^3.12")
+project.add_dependency("Boto3@^1.35.92")
+
 project.synth()

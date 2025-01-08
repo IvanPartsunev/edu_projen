@@ -9,6 +9,7 @@ readme = "README.md"
 
   [tool.poetry.dependencies]
   aws-cdk-lib = "^2.1.0"
+  Boto3 = "^1.35.92"
   constructs = "^10.0.5"
   python = "^3.12"
 

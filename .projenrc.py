@@ -1,6 +1,6 @@
-import os
-
 from projen.awscdk import AwsCdkPythonApp
+
+python_version = "3.12"
 
 project = AwsCdkPythonApp(
     author_email="ivan.parcunev@gmail.com",
@@ -10,12 +10,15 @@ project = AwsCdkPythonApp(
     name="my_project",
     version="0.1.0",
     poetry=True,
+    deps=[
+        f"python@{python_version}.*"
+    ],
+    dev_deps=[
+        "Boto3@^1.35.92",
+        "apache-airflow@^2.10.4",
+        "ray@{version = '2.40.0', extras = ['default']}",
+    ]
 )
-
-# Dependencies:
-project.add_dependency("python@~3.12")
-project.add_dependency("Boto3@^1.35.92")
-project.add_dependency("apache-airflow@^2.10.4")
 
 # .gitignore:
 project.gitignore.add_patterns(

@@ -8,15 +8,19 @@ authors = [ "IvanPartsunev <ivan.parcunev@gmail.com>" ]
 readme = "README.md"
 
   [tool.poetry.dependencies]
-  apache-airflow = "^2.10.4"
   aws-cdk-lib = "^2.1.0"
-  Boto3 = "^1.35.92"
   constructs = "^10.0.5"
-  python = "~3.12"
+  python = "3.12.*"
 
 [tool.poetry.group.dev.dependencies]
+apache-airflow = "^2.10.4"
+Boto3 = "^1.35.92"
 projen = "0.91.5"
 pytest = "7.4.3"
+
+  [tool.poetry.group.dev.dependencies.ray]
+  version = "2.40.0"
+  extras = [ "default" ]
 
 [build-system]
 requires = [ "poetry-core" ]

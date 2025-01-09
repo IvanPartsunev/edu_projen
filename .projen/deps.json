@@ -1,23 +1,28 @@
 {
   "dependencies": [
     {
+      "name": "apache-airflow",
+      "version": "^2.10.4",
+      "type": "devenv"
+    },
+    {
+      "name": "Boto3",
+      "version": "^1.35.92",
+      "type": "devenv"
+    },
+    {
       "name": "projen",
       "version": "0.91.5",
       "type": "devenv"
     },
     {
-      "name": "apache-airflow",
-      "version": "^2.10.4",
-      "type": "runtime"
+      "name": "ray",
+      "version": "{version = '2.40.0', extras = ['default']}",
+      "type": "devenv"
     },
     {
       "name": "aws-cdk-lib",
       "version": "^2.1.0",
-      "type": "runtime"
-    },
-    {
-      "name": "Boto3",
-      "version": "^1.35.92",
       "type": "runtime"
     },
     {
@@ -27,7 +32,7 @@
     },
     {
       "name": "python",
-      "version": "~3.12",
+      "version": "3.12.*",
       "type": "runtime"
     },
     {

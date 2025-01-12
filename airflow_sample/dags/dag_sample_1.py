@@ -4,7 +4,24 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 
-from airflow_sample.plugins.dag_sample_1_funcs import print_welcome, print_date, print_quote
+
+from datetime import datetime
+
+from jinja2.constants import LOREM_IPSUM_WORDS
+
+
+def print_welcome():
+  return "Welcome to AIRFLOW"
+
+
+def print_date():
+  return f"Today is {datetime.today().date()}"
+
+
+def print_quote():
+  quote = LOREM_IPSUM_WORDS[:10]
+
+  return f"Quote of the day: {quote}"
 
 default_args = {
   "owner": "sample_1",

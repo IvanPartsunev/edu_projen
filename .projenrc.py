@@ -22,7 +22,7 @@ project = AwsCdkPythonApp(
 
 # .gitignore:
 project.gitignore.add_patterns(
-    "airflow/docker-compose.yaml",   #Ignore docker-compose for airflow
+    "airflow_sample/docker-compose.yaml",   #Ignore docker-compose for airflow
 )
 
 project.synth()

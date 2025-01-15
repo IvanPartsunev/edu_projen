@@ -13,6 +13,7 @@ readme = "README.md"
   python = "3.12.*"
 
 [tool.poetry.group.dev.dependencies]
+apache-airflow-providers-amazon = "^9.2.0"
 apache-airflow = "^2.10.4"
 Boto3 = "^1.35.92"
 projen = "0.91.5"

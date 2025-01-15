@@ -16,6 +16,7 @@ project = AwsCdkPythonApp(
     dev_deps=[
         "Boto3@^1.35.92",
         "apache-airflow@^2.10.4",
+        "apache-airflow-providers-amazon@^9.2.0",
         "ray@{version = '2.40.0', extras = ['default']}",
     ]
 )

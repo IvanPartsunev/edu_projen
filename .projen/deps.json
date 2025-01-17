@@ -16,6 +16,11 @@
       "type": "devenv"
     },
     {
+      "name": "pandas",
+      "version": "^2.2.3",
+      "type": "devenv"
+    },
+    {
       "name": "projen",
       "version": "0.91.5",
       "type": "devenv"

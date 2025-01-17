@@ -18,6 +18,7 @@ project = AwsCdkPythonApp(
         "apache-airflow@^2.10.4",
         "apache-airflow-providers-amazon@^9.2.0",
         "ray@{version = '2.40.0', extras = ['default']}",
+        "pandas@^2.2.3"
     ]
 )
 
